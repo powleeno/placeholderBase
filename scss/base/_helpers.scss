@@ -1,0 +1,96 @@
+.base_absolute_stretch {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.base_background_image {
+	background-size: cover;
+	background-position: 50%;
+}
+
+.base_full_width {
+	max-width: 100%;
+	width: 100%;
+}
+
+.base_square {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.base_table {
+	display: table;
+	.base_table_cell {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.base_list_reset {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.base_phone {
+	@media #{$but-small} {
+		pointer-events: none;
+		cursor: default;
+	}
+}
+
+.base_form_layout {
+	input {
+		&[type="text"] {
+
+		}
+		&[type="submit"] {
+
+		}
+	}
+	textarea {
+		resize: none;
+	}
+	.base_form_label {
+
+	}
+	.base_form_notice {
+
+	}
+	.base_form_sent {
+
+	}
+	.base_form_errors {
+
+	}
+}
+
+.base_form_styles {
+	input {
+		&[type="text"] {
+
+		}
+		&[type="submit"] {
+
+		}
+	}
+	textarea {
+		resize: none;
+	}
+	.base_form_label {
+
+	}
+	.base_form_notice {
+
+	}
+	.base_form_sent {
+
+	}
+	.base_form_errors {
+
+	}
+}

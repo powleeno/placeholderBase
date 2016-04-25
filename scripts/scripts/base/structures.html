@@ -1,0 +1,54 @@
+<!-- To apply with base_stretch_object() ---------------------------------- -->
+
+<div>
+
+    <!-- --------------------------------------------
+    Reference :: .base_str_ref
+        serves as height reference for container to be stretched vertically;
+        stretching utilizes outerHeight so css property margin is best avoided;
+        -->
+    <div class="base_str_ref">Your content here.</div>
+
+    <!-- --------------------------------------------
+    Container :: .base_str_con
+        this basically has it's height stretched to match .base_str_ref;
+        height of .base_str_obj depends of this;
+        -->
+    <div class="base_str_con">
+
+        <!-- --------------------------------------------
+        Object :: .base_str_obj
+            this has it's width stretched and is positioned according to classes assigned;
+            it receives the following classes:
+                .base_str_box :
+                    with this, .base_str_obj gets stretched to match .base_str_con (as in a box);
+                .base_str_top :
+                    with this, .base_str_obj gets stretched to the edge of the window;
+                    with .base_str_top, either .base_str_left or .base_str_right must be assigned to .base_str_obj; they regulate it's float;
+                    -->
+        <div class="base_str_obj base_str_top base_str_right"></div>
+
+        <div>More content can go here if intended.</div>
+    </div>
+
+</div>
+
+
+<!-- Example 1: a left floated image background stretched to the window edges -->
+
+<div>
+    <div class="base_str_ref">Your content here.</div>
+    <div class="base_str_con">
+        <div class="base_str_obj base_str_top base_str_left" style="background-image: url('path/to/image')"></div>
+        <div>More content can go here if intended.</div>
+    </div>
+</div>
+
+
+<!-- Example 2: a box with an image -->
+<div>
+    <div class="base_str_ref">Your content here.</div>
+    <div class="base_str_con">
+        <div class="base_str_obj base_str_box" style="background-image: url('path/to/image')"></div>
+    </div>
+</div>
